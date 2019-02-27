@@ -2,10 +2,10 @@
  * Created by Miguel Pazo (http://miguelpazo.com)
  */
 
-let express = require('express');
-let router = express.Router();
-let loginController = require('./loginController');
-let homeController = require('./homeController');
+const express = require('express');
+const router = express.Router();
+const loginController = require('./loginController');
+const homeController = require('./homeController');
 
 module.exports = () => {
 
@@ -17,6 +17,9 @@ module.exports = () => {
     });
     router.get('/home', (req, res, next) => {
         homeController.getIndex(req, res, next);
+    });
+    router.get('/logout', (req, res, next) => {
+        homeController.getLogout(req, res, next);
     });
 
     return router;

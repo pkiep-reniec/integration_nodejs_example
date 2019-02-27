@@ -2,22 +2,22 @@
  * Created by Miguel Pazo (http://miguelpazo.com)
  */
 
-let express = require('express');
-let path = require('path');
-let favicon = require('serve-favicon');
-let bodyParser = require('body-parser');
-let cookieParser = require('cookie-parser');
-let session = require('express-session');
+const express = require('express');
+const path = require('path');
+const favicon = require('serve-favicon');
+const bodyParser = require('body-parser');
+const cookieParser = require('cookie-parser');
+const session = require('express-session');
 
-let app = express();
-let server = require('http').Server(app);
+const app = express();
+const server = require('http').Server(app);
 
 //config
-let config = require('../config/config.json');
-let router = require('../routes/_index')();
+const config = require('../config/config.json');
+const router = require('../routes/_index')();
 
 //middlewares
-let midTrimmer = require('../middleware/trimmer');
+const midTrimmer = require('../middleware/trimmer');
 
 app.use(cookieParser());
 app.use(session({secret: config.app.key}));

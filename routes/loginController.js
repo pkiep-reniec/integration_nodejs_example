@@ -2,10 +2,10 @@
  * Created by Miguel Pazo (http://miguelpazo.com)
  */
 
-let configAuth = require('./../config/reniec_idaas.json');
-let config = require('./../config/config.json');
-let randomstring = require('randomstring');
-let reniecIdaas = require('reniec-idaas');
+const configAuth = require('./../config/reniec_idaas.json');
+const config = require('./../config/config.json');
+const randomstring = require('randomstring');
+const reniecIdaas = require('reniec-idaas');
 
 let controller = {
     getIndex: (req, res, next) => {

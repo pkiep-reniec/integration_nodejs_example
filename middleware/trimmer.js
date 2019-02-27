@@ -2,7 +2,7 @@
  * Created by Miguel Pazo (http://miguelpazo.com)
  */
 
-let _ = require('underscore');
+const _ = require('underscore');
 
 module.exports = (req, res, next) => {
     let exclude = [
