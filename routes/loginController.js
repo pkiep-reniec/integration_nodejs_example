@@ -59,11 +59,9 @@ function setReniecIdaasConfig(state) {
     reniecIdaas.setConfig({
         redirectUri: config.app.baseUrl + '/auth-endpoint',
         scopes: [
-            reniecIdaas.constAuth.SCOPE_PROFILE,
-            reniecIdaas.constAuth.SCOPE_EMAIL,
-            reniecIdaas.constAuth.SCOPE_PHONE
+            reniecIdaas.constAuth.SCOPE_PROFILE
         ],
-        acr: reniecIdaas.constAuth.ACR_ONE_FACTOR,
+        acr: reniecIdaas.constAuth.ACR_PKI_DNIE,
         state: state,
         config: configAuth
     });
