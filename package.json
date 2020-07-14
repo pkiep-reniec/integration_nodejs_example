@@ -20,7 +20,7 @@
     "express-session": "^1.15.6",
     "pug": "^2.0.3",
     "randomstring": "^1.1.5",
-    "reniec-idaas": "^1.1.0",
+    "reniec-idaas": "^2.0.0",
     "serve-favicon": "^2.5.0",
     "underscore": "^1.9.1"
   }
