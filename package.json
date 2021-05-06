@@ -22,6 +22,6 @@
     "randomstring": "^1.1.5",
     "reniec-idaas": "^2.0.0",
     "serve-favicon": "^2.5.0",
-    "underscore": "^1.9.1"
+    "underscore": "^1.12.1"
   }
 }
